@@ -24,7 +24,7 @@ const ResultPage = ({ results }) => {
               <p><strong>Calories Burned Per Hour:</strong> {exercise.calories_burned_per_hour}</p>
               <p><strong>Weekly Duration (Hours):</strong> {exercise.weekly_duration_hours}</p>
               <p><strong>Daily Duration (Minutes):</strong> {exercise.daily_duration_minutes}</p>
-              <p><strong>Insights:</strong> {exercise.insights}</p>
+              <p><strong>Type of exercises:</strong> {exercise.insights}</p>
             </li>
           ))}
         </ul>
