@@ -1,0 +1,30 @@
+/* HomePage.css: Styling for the home page */
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #4CAF50, #81C784);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.welcome-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.welcome-message {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.instructions {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #E8F5E9;
+}

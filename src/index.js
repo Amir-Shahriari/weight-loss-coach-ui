@@ -1,8 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom/client"; // Note the change in the import
-import "./App.css";
-import App from "./App";
+import React from 'react';
+import ReactDOM from 'react-dom/client'; // Use 'react-dom/client' in React 18+
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
 
-// Use createRoot instead of render
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+const root = ReactDOM.createRoot(document.getElementById('root')); // Create root
+root.render(
+    <React.StrictMode>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    </React.StrictMode>
+);
