@@ -1,0 +1,57 @@
+/* ExerciseRecommendationPage.css: Styling for the redesigned recommendation page */
+
+.recommendations-page {
+  padding: 2rem;
+  background: linear-gradient(90deg, #4CAF50, #81C784);
+  min-height: 100vh;
+  color: white;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.recommendations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.exercise-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  color: #555;
+  text-align: center;
+}
+
+.exercise-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #4CAF50;
+}
+
+.exercise-description {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.details-button {
+  background: #4CAF50;
+  color: white;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.details-button:hover {
+  background: #388E3C;
+}
