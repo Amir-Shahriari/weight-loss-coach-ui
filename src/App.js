@@ -4,10 +4,13 @@ import Header from './components/Header';
 import HomePage from './components/HomePage';
 import InputPage from './components/InputPage';
 import ExerciseRecommendationPage from './components/ExerciseRecommendationPage';
+import Modal from './components/Modal';
 
 const App = () => {
     const [recommendations, setRecommendations] = useState([]);
     const [dailyCalorieIntake, setDailyCalorieIntake] = useState(0);
+    const [isModalOpen, setModalOpen] = useState(false);
+    const [modalContent, setModalContent] = useState({ title: '', content: '' });
 
     const fetchRecommendations = async (userDetails) => {
         try {
@@ -33,13 +36,22 @@ const App = () => {
 
     const handleDetailsClick = (exerciseId) => {
         const selectedExercise = recommendations.find((ex) => ex.id === exerciseId);
-
         if (selectedExercise) {
-            alert(`Insights for ${selectedExercise.activity}: ${selectedExercise.insights}`);
+            setModalContent({
+                title: `Insights for ${selectedExercise.activity}`,
+                content: selectedExercise.insights,
+            });
+            setModalOpen(true);
         } else {
-            alert("Details not found for this exercise.");
+            setModalContent({
+                title: 'Error',
+                content: 'Details not found for this exercise.',
+            });
+            setModalOpen(true);
         }
     };
+
+    const closeModal = () => setModalOpen(false);
 
     return (
         <div>
@@ -58,6 +70,13 @@ const App = () => {
                     }
                 />
             </Routes>
+            <Modal
+                isOpen={isModalOpen}
+                onClose={closeModal}
+                title={modalContent.title}
+            >
+                <p>{modalContent.content}</p>
+            </Modal>
         </div>
     );
 };
