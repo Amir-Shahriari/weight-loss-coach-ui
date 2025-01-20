@@ -1,5 +1,5 @@
 demo of the app:
-[Watch the video]((https://www.dropbox.com/scl/fi/97v7twc83viks3wrej08q/DemoWeightLossCoach.mp4?rlkey=xxqep9to4y3nsjex148318lnz&st=edqjwzwl&dl=0))
+[Watch the video](https://www.dropbox.com/scl/fi/97v7twc83viks3wrej08q/DemoWeightLossCoach.mp4?rlkey=xxqep9to4y3nsjex148318lnz&st=edqjwzwl&dl=0)
 
 # Getting Started with Create React App
 
